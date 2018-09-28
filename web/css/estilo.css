@@ -10,12 +10,21 @@ header
 }
 #contenedor
 {
-	background: #AAAAAA;
+	display: flex;
+	width:100%;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
-#nav
+#navegador
 {
 	background: lightblue;
 }
+ul
+{
+	list-style-type: none;
+	text-decoration: none;
+}
+
 #contenido
 {
 	background: #666666;
