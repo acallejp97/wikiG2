@@ -18,6 +18,8 @@ Miramos que es lo que hay distinto entre nuestra carpeta y la que está en githu
 Si hay algo borrado que no esté en nuestra carpeta, tendremos que borrarlo antes de hacer el push
 hacemos 
 	git merge --allow-unreleated-histories
+En caso de que no deje hacer push probar git pull.
 
 miramos que hayamos solucionado las diferencias y hacemos 
 	git push
+
