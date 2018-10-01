@@ -9,25 +9,30 @@
 </head>
 <body>
     <section>
-            Como crear un contenerdor:
-            En Proxmox podemos crear dos cosas:
-            1. Máquinas Virtuales KVM. Se crean a partir de una ISO.
-            2. Contenedores. A partir de la versión 4.x se utilizan contenedores LXC. Se crean a partir de una plantilla de contenedor. Estas plantillas pueden descargarse directamente desde los repositorios de plantillas de Proxmox.
-            Para crear un contenedor vamos al nodo (servidor) que nos interesa y damos a createCT. Aquí rellenamos hostname con el nombre que queremos dar a nuestro contenedor, en recursos asignamos nuestro grupo,que está formado por nuestros usuarios en proxmox, ponemos una contraseña y aceptamos (el usuario será por defecto root). En el siguiente paso elegimos la plantilla que previamente descargamos desde el almacenamiento local de nuestro nodo y aceptamos. Después elegimos el disco en el que se instalará y el tamaño que se le asignará y aceptamos. Después asignamos el número de núcleos y aceptamos.Después elegimos la memoria y aceptamos.Después asignamos la configuración de red para acceder desde un navegador externo. Luego asignamos el servidor DNS y finalmente confirmamos.
-
-            Como iniciar contenedor:
-            Para iniciar un contenedor, vamos al nodo en el que lo instalamos y al desplegarlo aparacerá. Lo seleccionamos y con el click derecho desplegamos las opciones, entre ellas estará start. Si el servidor no deja iniciar porque falla qemu ejecutamos las siguientes órdenes en la termianl de el contenedor:
-            systemctl stop pve-cluster
-            pmxcfs -1
-            Después nos dejará iniciarlo y meteremos las credenciales del usuario.
-
-            Como instalar apache y git en el contenedor:
-            Una vez introducidas las credenciales instalamos apache2 y git con:
-            sudo apt-get install apache2
-            sudo apt-get install git
-
-            Como usar Apache y git conjuntamente:
-            En la carpeta /var/www/html está el index de apache2. En está misma carpeta haremos un git pull de nuestro repositorio y podremos acceder a el a través de la ip que asignamos al contenedor. 
+        <article name="creoCont">
+                <h3>Como crear un contenerdor:</h3>               
+                En Proxmox podemos crear dos cosas:
+                1. Máquinas Virtuales KVM. Se crean a partir de una ISO.
+                2. Contenedores. A partir de la versión 4.x se utilizan contenedores LXC. Se crean a partir de una plantilla de contenedor. Estas plantillas pueden descargarse directamente desde los repositorios de plantillas de Proxmox.
+                Para crear un contenedor vamos al nodo (servidor) que nos interesa y damos a createCT. Aquí rellenamos hostname con el nombre que queremos dar a nuestro contenedor, en recursos asignamos nuestro grupo,que está formado por nuestros usuarios en proxmox, ponemos una contraseña y aceptamos (el usuario será por defecto root). En el siguiente paso elegimos la plantilla que previamente descargamos desde el almacenamiento local de nuestro nodo y aceptamos. Después elegimos el disco en el que se instalará y el tamaño que se le asignará y aceptamos. Después asignamos el número de núcleos y aceptamos.Después elegimos la memoria y aceptamos.Después asignamos la configuración de red para acceder desde un navegador externo. Luego asignamos el servidor DNS y finalmente confirmamos.   
+        </article>
+        <article name="inicCont">
+                <h3>Como iniciar contenedor:</h3>              
+                Para iniciar un contenedor, vamos al nodo en el que lo instalamos y al desplegarlo aparacerá. Lo seleccionamos y con el click derecho desplegamos las opciones, entre ellas estará start. Si el servidor no deja iniciar porque falla qemu ejecutamos las siguientes órdenes en la termianl de el contenedor:
+                systemctl stop pve-cluster
+                pmxcfs -1
+                Después nos dejará iniciarlo y meteremos las credenciales del usuario.    
+        </article>
+        <article name="instApacheGit">
+                <h3>Como instalar apache y git en el contenedor:</h3>               
+                Una vez introducidas las credenciales instalamos apache2 y git con:
+                sudo apt-get install apache2
+                sudo apt-get install git
+        </article>
+        <article name="usarApacheGit">
+                <h3>Como usar Apache y git conjuntamente:</h3>             
+                En la carpeta /var/www/html está el index de apache2. En está misma carpeta haremos un git pull de nuestro repositorio y podremos acceder a el a través de la ip que asignamos al contenedor.     
+        </article>
     </section>
 </body>
 </html>

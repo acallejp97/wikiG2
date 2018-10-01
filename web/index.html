@@ -7,6 +7,17 @@
 	<title>El rompecabezas de Proxmox VE</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css" />
+	<script>
+
+		function cambiarFrame(enlace) {
+			var iframe = document.getElementById('frame');
+			iframe.src = enlace;
+
+
+		}
+
+
+	</script>
 </head>
 
 <body>
@@ -14,39 +25,40 @@
 		<img src="" alt="logoWP" height="42" width="42">
 		<h1 id="titulo-cabecero">El rompecabezas de Proxmox VE</h1>
 	</header>
-	<section id = "contenedor">
-		
-	<nav id="navegador">
-		<ul id="lista">
-			<li>
-				<a href="CP.html">Configuración de Proxmox VE</a>
-				<ul id="lista-1">
-					<li><a href="url">¿Que necesitamos para instalar el Proxmox?</a></li>
-					<li><a href="url">¿Como creamos un USB booteable?</a></li>
-					<li><a href="url">Instalacion en Windows:</a></li>
-					<li><a href="url">Configurar MicroServidor para instalacion:</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="IP.html">Instalación de Proxmox VE</a>
-				<ul id="lista-2">
-					<li><a href="url">Como instalar Proxmox:</a></li>
-					<li><a href="url">Como acceder a Proxmox:</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="IC.html">Instalación de Contendor LXC</a>
-				<ul id="lista-3">
-					<li><a href="url">Como crear un contenerdor:</a></li>
-					<li><a href="url">Como iniciar contenedor:</a></li>
-					<li><a href="url">Como instalar apache y git en el contenedor:</a></li>
-					<li><a href="url">Como usar Apache y git conjuntamente:</a></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-	<article id="articulo"><iframe src="https://pve.proxmox.com/wiki/Main_Page" width="100%" height="100%"></iframe>
-	</article>
+	<section id="contenedor">
+
+		<nav id="navegador">
+			<ul id="lista">
+				<li>
+					<a onclick="cambiarFrame('CP.html')">Configuración de Proxmox VE</a>
+					<ul id="lista-1">
+						<li><a onclick="cambiarFrame('./CP.html#necProx')">¿Que necesitamos para instalar el Proxmox?</a></li>
+						<li><a onclick="cambiarFrame('./CP.html#creoUsb')">¿Como creamos un USB booteable?</a></li>
+						<li><a onclick="cambiarFrame('./CP.html#insWind')">Instalacion en Windows:</a></li>
+						<li><a onclick="cambiarFrame('./CP.html#confServ')">Configurar MicroServidor para instalacion:</a></li>
+					</ul>
+				</li>
+				<li>
+					<a onclick="cambiarFrame('IP.html')">Instalación de Proxmox VE</a>
+					<ul id="lista-2">
+						<li><a onclick="cambiarFrame('IP.html#insProx')">Como instalar Proxmox:</a></li>
+						<li><a onclick="cambiarFrame('IP.html#accProx')">Como acceder a Proxmox:</a></li>
+					</ul>
+				</li>
+				<li>
+					<a onclick="cambiarFrame('IC.html')">Instalación de Contendor LXC</a>
+					<ul id="lista-3">
+						<li><a onclick="cambiarFrame('IC.html#creoCont')">Como crear un contenerdor:</a></li>
+						<li><a onclick="cambiarFrame('IC.html#inicCont')">Como iniciar contenedor:</a></li>
+						<li><a onclick="cambiarFrame('IC.html#instApacheGit')">Como instalar apache y git en el contenedor:</a></li>
+						<li><a onclick="cambiarFrame('IC.html#usarApacheGit')">Como usar Apache y git conjuntamente:</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<article id="articulo">
+			<iframe id="frame" src="https://pve.proxmox.com/wiki/Main_Page" width="100%" height="100%"></iframe>
+		</article>
 	</section>
 	<footer id="pie">
 		<img src="" alt="logoWP" height="32" width="32">
