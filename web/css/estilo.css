@@ -3,40 +3,71 @@
 	margin: 0;
 	padding: 0;
 }
-
+html
+{
+	height: 100%;
+}
 body
 {
 	width:80%;
 	margin: auto;
+	height: 100%;
+	font-size: 1.75em;
+	min-height: 300px;
+	
 }
-header
+header, footer
 {
-	background: cyan;
-
+	background: rgb(221,212,232);
+	min-height: 15%;
+	width: 100%;
 }
 #contenedor
 {
 	display: flex;
-	width:100%;
 	flex-wrap: wrap;
 	flex-direction: row;
+	width:100%;
+	background: lightblue;
+	height: 100%;
 }
+
 #navegador
 {
-	background: lightblue;
+	width: 35%;
+	height: auto:;
 }
 ul
 {
 	list-style-type: none;
+	margin-left: 10%;
+}
+
+.Encabezado
+{
+	color: black;
+}
+a
+{
 	text-decoration: none;
 }
 
-#contenido
+/* Creamos el efecto de lista deplegable*/
+#lista-1, #lista-2, #lista-3
 {
-	background: #666666;
+	display: none;
+}
+#desplegable-1:hover>#lista-1, #desplegable-2:hover>#lista-2, #desplegable-3:hover>#lista-3
+{
+	display: block;
 }
 
-footer
+
+/* Damos estilo a la parte del contenido*/
+#articulo
 {
-	background: cyan;
+	width: 64.5%;
+	min-width: 400px;
+	height: auto;
 }
+
