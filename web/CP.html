@@ -9,23 +9,24 @@
 </head>
 <body>
     <section>
-        <article name="necProx">
+        <h1>Configuración de Proxmox VE</h1>
+        <article id="necProx">
                 <h3>¿Que necesitamos para instalar el Proxmox?</h3>            
                 Lo primero de todo es tener el microservidor, en este caso usamos un HP ProLiant MicroServer Gen8.
                 A parte de este, necesitaremos un monitor con entrada VGA. En caso de no disponer de esta, podremos usar un adaptador de entrada. Tambien necesitaremos un ratón y un teclado para poder movernos a traves de las opciones que nos da el servidor. Y para poder instalar el sistema operativo crearemos un USB booteable.    
         </article>
-        <article name="creoUsb">
+        <article id="creoUsb">
                 <h3>¿Como creamos un USB booteable?</h3>               
                 Para crear el USB de este sistema operativo no podemos crearlo con RUFUS o UNetbooting, ya que estos programas dan errores. Para ello lo que haremos será primero de todo hacernos con un USB en formato fat32 vacio con al menos un GB de memoria. 
                 Instalacion en Linux:
                 Mediante la terminal de linux usaremos los siguientes comandos: lsblk- Con este comando encontraremos el nombre y la ubicacion de nuestro USB.
                  dd if=proxmox-ve_*.iso of=[Aqui ponemos la direccion del usb que hemos visto que es a traves de lsblk] bs=1M     
         </article>
-        <article name="insWind">
+        <article id="insWind">
                 <h3>Instalacion en Windows:</h3>               
                 Nos descargamos Etcher y seguimos sus instrucciones. En caso de que este no funcione usaremos OSForensics    
         </article>
-        <article name="confServ">
+        <article id="confServ">
                 <h3>Configurar MicroServidor para instalacion:</h3>               
                 Para empezar conectaremos todos los perifericos al microservidor, el cual estará conectado a una entrada de red a traves del RJ45.
                 Una vez encendido, esperaremos a que aparezca la opcion de entrar a la BIOS desde el F9. Pondrá SETUP.
