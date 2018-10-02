@@ -15,6 +15,7 @@
                 En Proxmox podemos crear dos cosas:
                 1. Máquinas Virtuales KVM. Se crean a partir de una ISO.
                 2. Contenedores. A partir de la versión 4.x se utilizan contenedores LXC. Se crean a partir de una plantilla de contenedor. Estas plantillas pueden descargarse directamente desde los repositorios de plantillas de Proxmox.
+                <img src="./imagenes/ProxmoxCT1.png" alt="proxmoxCT1" height="120" width="140">
                 Para crear un contenedor vamos al nodo (servidor) que nos interesa y damos a createCT. Aquí rellenamos hostname con el nombre que queremos dar a nuestro contenedor, en recursos asignamos nuestro grupo,que está formado por nuestros usuarios en proxmox, ponemos una contraseña y aceptamos (el usuario será por defecto root). En el siguiente paso elegimos la plantilla que previamente descargamos desde el almacenamiento local de nuestro nodo y aceptamos. Después elegimos el disco en el que se instalará y el tamaño que se le asignará y aceptamos. Después asignamos el número de núcleos y aceptamos.Después elegimos la memoria y aceptamos.Después asignamos la configuración de red para acceder desde un navegador externo. Luego asignamos el servidor DNS y finalmente confirmamos.   
         </article>
         <article id="inicCont">
@@ -22,7 +23,9 @@
                 Para iniciar un contenedor, vamos al nodo en el que lo instalamos y al desplegarlo aparacerá. Lo seleccionamos y con el click derecho desplegamos las opciones, entre ellas estará start. Si el servidor no deja iniciar porque falla qemu ejecutamos las siguientes órdenes en la termianl de el contenedor:
                 systemctl stop pve-cluster
                 pmxcfs -1
-                Después nos dejará iniciarlo y meteremos las credenciales del usuario.    
+                <img src="./imagenes/ProxmoxCT2.png" alt="proxmoxCT1" height="120" width="140">
+                Después nos dejará iniciarlo y meteremos las credenciales del usuario.   
+                <img src="./imagenes/ProxmoxCT3.png" alt="proxmoxCT1" height="120" width="140"> 
         </article>
         <article id="instApacheGit">
                 <h3>Como instalar apache y git en el contenedor:</h3>               
