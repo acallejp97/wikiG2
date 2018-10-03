@@ -6,66 +6,55 @@
 
 body
 {
-	width:80%;
+	width:100%;
 	margin: auto;
 	height: auto;
 	font-size: 1.75em;
 	min-height: 300px;
 	max-height: 900px;
-}
-header, footer
-{
 	background: rgb(221,212,232);
 }
-#contenedor
+h1
 {
-	display: flex;
-	width:100%;
-	flex-wrap: wrap;
-	flex-direction: row;
+	text-align: center;
 }
-aside
-{
-	width: 34%;
-	background: lightblue;
 
+article
+{
+	text-align: justify;
+	padding:1%;
 }
-#navegador
-{	
-	width: 100%;
-	font-size: 1.1em;
+/*h2, p
+{
+	float:right;
+}
+img
+{
+	float: right;
+}*/
+#imagen1, #imagen2, #imagen3
+{
+	float: left;
+	height: 40%;
+	width: 30%;
+	padding:1%;
+}
+#imagen4, #imagen4, #imagen5
+{
+	float: left;
+	height: 20%;
+	width: 20%;
+	padding:1%;
+}
+/*.texto
+{
+	float:right;
 	padding: 1%;
-}
-ul
-{
-	list-style-type: none;
-	margin-left: 10%;
+	width:49%;
 }
 
-.Encabezado
+.imagen
 {
-	color: black;
-}
-a
-{
-	text-decoration: none;
-}
-
-/* Creamos el efecto de lista deplegable*/
-#lista-1, #lista-2, #lista-3
-{
-	display: none;
-}
-#div1:hover>#lista-1, #div2:hover>#lista-2, #div3:hover>#lista-3
-{
-	display: block;
-}
-
-/* Damos estilo a la parte del contenido*/
-#articulo
-{
-	/*background: rgb(207,236,206);*/
-	background: rgb(240,232,205);
-	width: 64%;
-	padding: 1%;
-}
+	float:left;
+	width:49%;
+}*/
