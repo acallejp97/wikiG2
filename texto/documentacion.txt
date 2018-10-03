@@ -53,7 +53,12 @@ sudo apt-get install git
 Como usar Apache y git conjuntamente:
 En la carpeta /var/www/html está el index de apache2. En está misma carpeta haremos un git pull de nuestro repositorio y podremos acceder a el a través de la ip que asignamos al contenedor. 
 
+
+Container:
+HostName:grupo2
+Password: grupo2
  
+Todo next hasta Network
 
 
 
