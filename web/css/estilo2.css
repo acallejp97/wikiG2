@@ -12,7 +12,7 @@ body
 	font-size: 1.75em;
 	min-height: 300px;
 	max-height: 900px;
-	background: rgb(221,212,232);
+	background: rgb(240,232,205);
 }
 h1
 {
@@ -22,7 +22,7 @@ h1
 article
 {
 	text-align: justify;
-	padding:1%;
+	padding:3%;
 }
 /*h2, p
 {
@@ -32,7 +32,14 @@ img
 {
 	float: right;
 }*/
-#imagen1, #imagen2, #imagen3
+img 
+{
+	display: block;
+	width: 25%;
+	margin-left: 37%;
+	margin-right: 37%;
+}
+/*#imagen1, #imagen2, #imagen3
 {
 	float: left;
 	height: 40%;
@@ -45,7 +52,7 @@ img
 	height: 20%;
 	width: 20%;
 	padding:1%;
-}
+}*/
 /*.texto
 {
 	float:right;

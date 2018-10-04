@@ -12,15 +12,15 @@
 
 <body>
 	<header id="cabecero">
-		<img src="./imagenes/logo.png" alt="logoWP" height="120" width="120">
+		<img id="logoCab" src="./imagenes/logo.png" alt="logoWP">
 		<h1 id="titulo-cabecero">El rompecabezas de Proxmox VE</h1>
 	</header>
 	<section id="contenedor">
 
 		<nav id="navegador">
 			<ul id="lista">
-			<li id="desplegable-1">
-					<a target="iframe_a" href='CP.html'>Configuración de Proxmox VE</a>
+			<li id="desplegable-1" class="Encabezado">
+					<a class="Encabezado" target="iframe_a" href='CP.html'>Configuración de Proxmox VE</a>
 					<ul id="lista-1">
 						<li><a target="iframe_a" href='./CP.html#necProx'>¿Que necesitamos para instalar el Proxmox?</a></li>
 						<li><a target="iframe_a" href='CP.html#creoUsb'>¿Como creamos un USB booteable?</a></li>
@@ -28,15 +28,15 @@
 						<li><a target="iframe_a" href='./CP.html#confServ'>Configurar MicroServidor para instalacion:</a></li>
 					</ul>
 				</li>
-			<li id="desplegable-2">
-					<a target="iframe_a" href='IP.html'>Instalación de Proxmox VE</a>
+			<li id="desplegable-2" class="Encabezado">
+					<a class="Encabezado" target="iframe_a" href='IP.html'>Instalación de Proxmox VE</a>
 					<ul id="lista-2">
 						<li><a target="iframe_a" href='IP.html#insProx'>Como instalar Proxmox:</a></li>
 						<li><a target="iframe_a" href='IP.html#accProx'>Como acceder a Proxmox:</a></li>
 					</ul>
 				</li>
-			<li id="desplegable-3">
-					<a target="iframe_a" href='IC.html'>Instalación de Contendor LXC</a>
+			<li id="desplegable-3" >
+					<a class="Encabezado" target="iframe_a" href='IC.html'>Instalación de Contendor LXC</a>
 					<ul id="lista-3">
 						<li><a target="iframe_a" href='IC.html#creoCont'>Como crear un contenerdor:</a></li>
 						<li><a target="iframe_a" href='IC.html#inicCont'>Como iniciar contenedor:</a></li>
@@ -47,11 +47,11 @@
 			</ul>
 		</nav>
 		<article id="articulo">
-			<iframe id="frame" src="https://pve.proxmox.com/wiki/Main_Page" width="100%" height="100%" name="iframe_a"></iframe>
+			<iframe id="frame" src="https://pve.proxmox.com/wiki/Main_Page" name="iframe_a"></iframe>
 		</article>
 	</section>
 	<footer id="pie">
-		<img src="./imagenes/logo.png" alt="logoWP" height="80" width="80">
+		<img id="logoFoo" src="./imagenes/logo.png" alt="logoWP" >
 		<h3 id="titulo-pie">El rompecabezas de Proxmox VE - Asier, Victor, Vanesa y Jon Andoni.</h3>
 	</footer>
 </body>
