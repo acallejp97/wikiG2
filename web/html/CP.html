@@ -15,9 +15,9 @@
     <article id="necProx">
 
       <div>
-        <h2>
+        <h3>
           ¿Que necesitamos para instalar el Proxmox?
-        </h2>
+        </h3>
         <p>Lo primero de todo es tener el microservidor, en este caso usamos un HP ProLiant MicroServer Gen8
           <img id="imagen1" src="../imagenes/microserver.jpg" alt="microserver" height="120" width="140">
           A parte de este, necesitaremos un monitor con entrada VGA. En caso de no disponer de esta, podremos usar un
@@ -29,7 +29,7 @@
     </article>
     <article id="creoUsb">
       <div>
-        <h2>¿Como creamos un USB booteable?</h2>
+        <h3>¿Como creamos un USB booteable?</h3>
         <p>Para crear el USB de este sistema operativo no podemos crearlo con RUFUS o UNetbooting, ya que estos
           programas dan errores. Para ello lo que haremos será primero de todo hacernos con un USB
           en formato fat32 vacio con al menos un GB de memoria.</p>
@@ -37,7 +37,7 @@
     </article>
     <article id="instalacion">
       <div>
-        <h2>Instalacion en Linux:</h2>
+        <h3>Instalacion en Linux:</h3>
         <p>Mediante la terminal de linux usaremos los siguientes comandos: lsblk- Con este comando encontraremos el
           nombre y la ubicacion de nuestro USB.
           <em> dd if=proxmox-ve_*.iso of=[Aqui ponemos la direccion del usb que hemos visto que es a traves de</em>
@@ -45,13 +45,13 @@
         </p>
       </div>
       <div>
-        <h2>Instalacion en Windows:</h2>
+        <h3>Instalacion en Windows:</h3>
         <p>Nos descargamos Etcher y seguimos sus instrucciones. En caso de que este no funcione usaremos OSForensics</p>
       </div>
     </article>
     <article id="confServ">
       <div>
-        <h2>Configurar MicroServidor para instalacion:</h2>
+        <h3>Configurar MicroServidor para instalacion:</h3>
         <img id="imagen2" src="../imagenes/bios.png" alt="bios" height="120" width="140">
         <p> Para empezar conectaremos todos los perifericos al microservidor, el cual estará conectado a
           una entrada de red a traves del RJ45.
@@ -78,7 +78,6 @@
         <p>Seleccionamos el arranque para que arranque de primeras desde el USB.
           <!-- imagen6-->
           Seleccionamos la opcion de proxmox e iniciamos el programa de instalacion.</p>
-        <img id="imagen6" src="../imagenes/bootmenu.jpg" alt="bootmenu" height="120" width="140">
       </div>
     </article>
   </section>

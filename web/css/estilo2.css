@@ -36,8 +36,13 @@ img
 {
 	display: block;
 	width: 25%;
-	margin-left: 37%;
-	margin-right: 37%;
+	margin-right: 3%;
+	margin-top: 3%;
+	margin-bottom: 3%; 
+	float: left;
+}
+#CAP{
+	margin-top:20px;
 }
 /*#imagen1, #imagen2, #imagen3
 {

@@ -7,6 +7,18 @@ html
 {
 	height: 100%;
 }
+#titulo-cabecero, #titulo-pie{
+	text-align: center;
+	padding-bottom:1%;
+}
+#cabecero{
+	border: 2px solid gray;
+
+}
+iframe{
+	border: 2px solid gray;
+
+}
 body
 {
 	width:80%;
@@ -32,10 +44,17 @@ header, footer
 	height: 100%;
 }
 
+#navegador:hover{
+	overflow-y:scroll;
+}
+
 #navegador
 {
 	width: 35%;
-	height: auto:;
+	height: 100%;
+	
+	position: relative;
+	border: 2px solid gray;
 }
 ul
 {
@@ -46,6 +65,7 @@ ul
 .Encabezado
 {
 	color: black;
+	
 }
 a
 {
@@ -61,6 +81,9 @@ a
 {
 	display: block;
 }
+#lista{
+	padding-top:2%; 
+}
 
 iframe
 {
@@ -73,6 +96,7 @@ iframe
 	width: 64.5%;
 	min-width: 400px;
 	height: auto;
+	
 }
 h1
 {
@@ -87,7 +111,7 @@ img
 #logoCab
 {
 	margin-left: 45%;
-	margin-left: 45%;
+	padding-top: 1%;
 	height: 95px; 
 	width: 95px;
 }
@@ -96,8 +120,13 @@ img
 {
 	margin-left: 45%;
 	margin-right: 45%;
+	padding-top:1%;
 	height: 80px; 
 	width: 80px;
 }
-
+#pie{
+	position: relative;
+	bottom: 0%;
+	border: 2px solid gray;	
+}
 

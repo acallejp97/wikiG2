@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <h1>Instalación de Contendor LXC</h1>
     <section>
+        <h1>Instalación de Contendor LXC</h1>
         <article id="creoCont">
             <div>
-                <h2>Como crear un contenedor:</h2>
+                <h3>Como crear un contenedor:</h3>
                 <img id="imagen1" src="../imagenes/ProxmoxCT1.png" alt="proxmoxCT1" title="imagen 1" height="120" width="140">
                 <p> En Proxmox podemos crear dos cosas:<br>
                     <em>1. Máquinas Virtuales KVM. Se crean a partir de una ISO.</em><br>
@@ -40,11 +40,9 @@
 
             </div>
             <div class="texto">
-                <h2>Como iniciar contenedor:</h2>
+                <h3>Como iniciar contenedor:</h3>
                 <div id="imagen2">
                     <img src="../imagenes/ProxmoxCT2.png" alt="proxmoxCT2" height="120" width="140">
-
-                    <img src="../imagenes/ProxmoxCT3.png" alt="proxmoxCT3" height="120" width="140">
                 </div>
                 <p> Para iniciar un contenedor, vamos al nodo en el que lo instalamos y al desplegarlo aparacerá. Lo
                     seleccionamos y con el click derecho desplegamos las opciones, entre ellas estará start. Si el
@@ -64,7 +62,7 @@
         </article>
         <article id="instApacheGit">
             <div class="texto">
-                <h2>Como instalar apache y git en el contenedor:</h2>
+                <h3>Como instalar apache y git en el contenedor:</h3>
                 <p>Una vez introducidas las credenciales instalamos apache2 y git con:<br>
                     <em>sudo apt-get install apache2</em>
                     <br>
@@ -74,7 +72,7 @@
         </article>
         <article id="usarApacheGit">
             <div>
-                <h2>Como usar Apache y git conjuntamente:</h2>
+                <h3>Como usar Apache y git conjuntamente:</h3>
                 <img id="imagen4" src="../imagenes/ProxmoxCT5.png" alt="proxmoxCT1" height="120" width="140">
                 <p>
                     En la carpeta /var/www/html está el index de apache2. En está misma carpeta haremos un git pull de
