@@ -44,6 +44,23 @@ img
 #CAP{
 	margin-top:20px;
 }
+
+#htmlvideo{
+	width:100%;
+	height: 100%;	
+}
+
+#bodyvideo{
+	width:100%;
+	height: 100%;
+	background-color:black;
+}
+
+#video{
+	width:100%;
+	height: 100%;
+
+}
 /*#imagen1, #imagen2, #imagen3
 {
 	float: left;

@@ -65,6 +65,7 @@ ul
 .Encabezado
 {
 	color: black;
+	margin-bottom:5%;
 	
 }
 a
@@ -83,6 +84,10 @@ a
 }
 #lista{
 	padding-top:2%; 
+}
+
+#lista li{
+	margin-bottom:4%;
 }
 
 iframe
@@ -112,15 +117,31 @@ img
 {
 	margin-left: 45%;
 	padding-top: 1%;
+	padding-bottom: 1%;
 	height: 95px; 
 	width: 95px;
 }
+
+#logoCab:hover, #logoFoo:hover {
+	-webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
+}
+
 
 #logoFoo
 {
 	margin-left: 45%;
 	margin-right: 45%;
 	padding-top:1%;
+	padding-bottom:1%;
 	height: 80px; 
 	width: 80px;
 }
