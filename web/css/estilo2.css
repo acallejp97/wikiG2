@@ -1,65 +1,61 @@
-*
-{
-	margin: 0;
-	padding: 0;
+@font-face {
+  font-family: "letraGlobal";
+  src: url(../fuentes/roboto-v18-latin-regular.woff);
+  src: url(../fuentes/roboto-v18-latin-regular.woff2);
 }
 
-body
-{
-	width:100%;
-	margin: auto;
-	height: auto;
-	font-size: 1.75em;
-	min-height: 300px;
-	max-height: 900px;
-	background: rgb(240,232,205);
-}
-h1
-{
-	text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-article
-{
-	text-align: justify;
-	padding:3%;
-}
-/*h2, p
-{
-	float:right;
-}
-img
-{
-	float: right;
-}*/
-img 
-{
-	display: block;
-	width: 25%;
-	margin-right: 3%;
-	margin-top: 3%;
-	margin-bottom: 3%; 
-	float: left;
-}
-#CAP{
-	margin-top:20px;
+body {
+  width: 100%;
+  font-family: "letraGlobal";
+  margin: auto;
+  height: auto;
+  font-size: 1.75em;
+  min-height: 300px;
+  max-height: 900px;
+  background: rgb(240, 232, 205);
 }
 
-#htmlvideo{
-	width:100%;
-	height: 100%;	
+h1 {
+  text-align: center;
 }
 
-#bodyvideo{
-	width:100%;
-	height: 100%;
-	background-color:black;
+article {
+  text-align: justify;
+  padding: 3%;
 }
 
-#video{
-	width:100%;
-	height: 100%;
+img {
+  display: block;
+  width: 25%;
+  margin-right: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: left;
+}
 
+#CAP {
+  margin-top: 20px;
+}
+
+#htmlvideo {
+  width: 100%;
+  height: 100%;
+}
+
+#bodyvideo {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
 }
 /*#imagen1, #imagen2, #imagen3
 {
@@ -86,4 +82,12 @@ img
 {
 	float:left;
 	width:49%;
+}*/
+/*h2, p
+{
+	float:right;
+}
+img
+{
+	float: right;
 }*/
