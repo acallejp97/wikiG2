@@ -15,6 +15,11 @@ html {
 
 #cabecero {
   border: 2px solid gray;
+  background-image: linear-gradient(rgb(191, 155, 233),rgb(221, 212, 232));
+}
+
+#pie{
+  background-image: linear-gradient(rgb(221, 212, 232), rgb(191, 155, 233));
 }
 
 iframe {
