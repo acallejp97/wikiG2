@@ -11,25 +11,25 @@
 
 <body>
     <section>
-        <h1>Instalación de Contendor LXC</h1>
+        <h1>Instalación de Contenedor LXC</h1>
         <article id="creoCont">
             <div>
                 <h3>Como crear un contenedor:</h3>
                 <img id="imagen1" src="../imagenes/ProxmoxCT1.png" alt="proxmoxCT1" title="imagen 1" height="120" width="140">
                 <p> En Proxmox podemos crear dos cosas:<br>
                     <em>1. Máquinas Virtuales KVM. Se crean a partir de una ISO.</em><br>
-                    <em>2. Contenedores.</em><br></p>
+                    <em>2. Contenedores.</em><br></p><br>
                 <p> A partir de la versión 4.x se utilizan contenedores LXC. Se crean a partir de una plantilla de
                     contenedor. Estas plantillas pueden descargarse directamente desde los repositorios de plantillas
                     de Proxmox.
-                </p>
+                </p><br>
                 <p> Para crear un contenedor vamos al nodo (servidor) que nos interesa y damos a createCT. Aquí
                     rellenamos hostname con el nombre que queremos dar a nuestro contenedor, en recursos asignamos
                     nuestro grupo,que está formado por nuestros usuarios en proxmox, ponemos una contraseña y aceptamos
-                    (el usuario será por defecto root).</p>
+                    (el usuario será por defecto root).</p><br>
                 <p>En el siguiente paso elegimos la plantilla que previamente descargamos desde el almacenamiento local
                     de nuestro nodo y aceptamos. Después elegimos el disco en el que se instalará y el tamaño que se le
-                    asignará y aceptamos. Después asignamos el número de núcleos y aceptamos.</p>
+                    asignará y aceptamos. Después asignamos el número de núcleos y aceptamos.</p><br>
                 <p>Después elegimos la memoria y aceptamos.Después asignamos la configuración de red para acceder desde
                     un navegador externo. Luego asignamos el servidor DNS y finalmente confirmamos.
                 </p>
@@ -51,8 +51,7 @@
                     <em>systemctl stop pve-cluster</em>
                     <br>
                     <em>pmxcfs -1</em>
-
-                </p>
+                </p><br>
                 <p>
                     Después nos dejará iniciarlo y meteremos las credenciales del usuario.
                 </p>

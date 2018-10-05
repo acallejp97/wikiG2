@@ -11,7 +11,7 @@
 
 <body>
   <section>
-    <h1>Configuración de Proxmox VE</h1>
+    <h1>Configuración del Servidor</h1>
     <article id="necProx">
 
       <div>
@@ -44,6 +44,7 @@
           <em>lsblk] bs=1M</em>
         </p>
       </div>
+      <br>
       <div>
         <h3>Instalacion en Windows:</h3>
         <p>Nos descargamos Etcher y seguimos sus instrucciones. En caso de que este no funcione usaremos OSForensics</p>
@@ -58,25 +59,23 @@
           Una vez encendido, esperaremos a que aparezca la opcion de entrar a la BIOS desde el F9. Pondrá
           SETUP.
         </p>
+        <br>
       </div>
       <div>
         <img id="imagen4" src="../imagenes/intelvirtualization.png" alt="intelvirtualziation" height="120" width="140">
-        <p> Una vez dentro de la BIOS, accedemos a <em>AdvancedOptions -> VirtualInstallDisk-> Enabled</em></p>
+        <p> Una vez dentro de la BIOS, accedemos a <em>AdvancedOptions -> VirtualInstallDisk-> Enabled</em></p><br>
       </div>
       <div>
 
         <p>Hecho esto, nos dirigiremos desde el menu principal de la BIOS a <em>SystemOptions->
-            ProcessorOptions->IntelVirtualizationTechnology->Enabled</em></p>
-
+            ProcessorOptions->IntelVirtualizationTechnology->Enabled</em></p><br>
       </div>
       <div>
         <p>Asegurarnos tambien que estemos en Legacy Mode.</p>
         <img id="imagen5" src="../imagenes/satalegacy.png" alt="satalegacy" height="120" width="140">
       </div>
       <div>
-
         <p>Seleccionamos el arranque para que arranque de primeras desde el USB.
-          <!-- imagen6-->
           Seleccionamos la opcion de proxmox e iniciamos el programa de instalacion.</p>
       </div>
     </article>

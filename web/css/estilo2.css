@@ -22,6 +22,11 @@ body {
 
 h1 {
   text-align: center;
+  padding-top:1%;
+}
+
+h3{
+  padding-bottom:1%;
 }
 
 article {
@@ -33,8 +38,8 @@ img {
   display: block;
   width: 25%;
   margin-right: 3%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 0%;
+  margin-bottom: 0%;
   float: left;
 }
 
@@ -57,37 +62,3 @@ img {
   width: 100%;
   height: 100%;
 }
-/*#imagen1, #imagen2, #imagen3
-{
-	float: left;
-	height: 40%;
-	width: 30%;
-	padding:1%;
-}
-#imagen4, #imagen4, #imagen5
-{
-	float: left;
-	height: 20%;
-	width: 20%;
-	padding:1%;
-}*/
-/*.texto
-{
-	float:right;
-	padding: 1%;
-	width:49%;
-}
-
-.imagen
-{
-	float:left;
-	width:49%;
-}*/
-/*h2, p
-{
-	float:right;
-}
-img
-{
-	float: right;
-}*/
